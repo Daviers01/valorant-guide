@@ -15,7 +15,11 @@ function Dropdown() {
 
   return (
     <div>
-      <select name="agents" onChange={onRoleChange}>
+      <select
+        name="agents"
+        onChange={onRoleChange}
+        className={"text-black p-2 rounded-md"}
+      >
         {roles.map((role) => {
           return (
             <option key={role} value={role}>

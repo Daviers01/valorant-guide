@@ -54,25 +54,21 @@ export default async function Agents({ searchParams }: QueryParams) {
               key={agent.id}
               href={agent.url.url}
               className={classnames(
-                "p-10 flex relative overflow-hidden cursor-pointer scale-1 hover:scale-105 rounded-lg",
+                "p-10 flex relative cursor-pointer scale-1 h-[300px] hover:scale-105 rounded-lg",
                 `bg-${agentName === "kay/o" ? "kay-o" : agentName}`
               )}
             >
-              <p className="font-tungsten text-5xl text-white relative z-20">
-                {agent.title}
-              </p>
-              <div className="absolute top-0 right-0">
-                <span className="absolute font-tungsten text-9xl stroke right-0 z-10">
-                  {agent.title.toUpperCase()}
-                </span>
-                <Image
-                  className="object-contain z-20 relative"
-                  src={agent.agent_image.url}
-                  alt=""
-                  width={150}
-                  height={150}
-                />
+              <div className="font-tungsten text-6xl text-white relative z-20">
+                <p className="text-3xl">{agent.role}</p>
+                <p>{agent.title}</p>
               </div>
+              <Image
+                className="object-contain z-20 absolute right-2 bottom-2"
+                src={agent.agent_image.url}
+                alt=""
+                width={200}
+                height={200}
+              />
             </Link>
           );
         })}

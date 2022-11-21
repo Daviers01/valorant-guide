@@ -31,12 +31,12 @@ export default function Home() {
       <div className="flex flex-row flex-wrap justify-center">
         <Link
           href={"/agents"}
-          className="rounded-2xl bg-gradient-to-l from-[#FF4655] to-valorant-bg scale-100 hover:scale-105 overflow-hidden m-2 w-72 h-32 cursor-pointer p-7 text-center relative transition-all"
+          className="rounded-2xl bg-gradient-to-l bg-sova scale-100 hover:scale-105 overflow-hidden m-2 w-72 h-32 cursor-pointer p-7 text-center relative transition-all"
         >
           <div className="flex items-center justify-center">
-            <span className="text-8xl font-tungsten z-10 absolute top-1 stroke">
+            {/* <span className="text-8xl font-tungsten z-10 absolute top-1 stroke">
               AGENTS
-            </span>
+            </span> */}
             <Image
               className="inline"
               src="/valorant-helmet.png"
@@ -54,12 +54,12 @@ export default function Home() {
         </Link>
         <Link
           href={"/arsenal"}
-          className="rounded-2xl bg-gradient-to-l from-[#FF4655] to-valorant-bg scale-100 hover:scale-105 overflow-hidden m-2 w-72 h-32 cursor-pointer p-7 text-center relative"
+          className="rounded-2xl bg-gradient-to-l bg-sova scale-100 hover:scale-105 overflow-hidden m-2 w-72 h-32 cursor-pointer p-7 text-center relative"
         >
           <div className="flex items-center justify-center">
-            <span className="text-8xl font-tungsten z-10 absolute top-1 stroke">
+            {/* <span className="text-8xl font-tungsten z-10 absolute top-1 stroke">
               ARSENAL
-            </span>
+            </span> */}
             <Image
               className="inline"
               src="/valorant-gun.png"
